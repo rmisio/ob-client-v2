@@ -1,4 +1,5 @@
 import electron from 'electron';
+
 // Module to control application life.
 const { app } = electron;
 // Module to create native browser window.
@@ -10,7 +11,7 @@ let win;
 
 function createWindow() {
   // Create the browser window.
-  win = new BrowserWindow({width: 800, height: 600});
+  win = new BrowserWindow({ width: 800, height: 600 });
 
   // and load the index.html of the app.
   win.loadURL(`file://${__dirname}/index.html`);
@@ -40,8 +41,6 @@ app.on('window-all-closed', () => {
     app.quit();
   }
 });
-
-var moo = 'hello ' + "world";
 
 app.on('activate', () => {
   // On macOS it's common to re-create a window in the app when the

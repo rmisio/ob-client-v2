@@ -9,7 +9,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "build-sass": "node-sass --source-map true --include-path styles styles/main.scss .tmp/styles/main.css",
-    "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\"",
+    "watch-lint": "nodemon -e js -x \"npm run lint\""
   },
   "repository": {
     "type": "git",

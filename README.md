@@ -18,6 +18,6 @@ Linting
 -------
 `npm run lint` will run eslint on the JS files.
 
-`npm watch-lint` will run eslint on any JS file changes.
+`npm run watch-lint` will run eslint on any JS file changes.
 
-_Please Note:_ If contributing, PR's with linting errors will not be merged.
+_If contributing, PR's with linting errors will not be merged._
